@@ -1,0 +1,7 @@
+<button class="btn btn-info" (click)="toggleDisplay()">Display Details</button>
+<p *ngIf="isShow">'Secret password is - myganesha'</p>
+<!-- <div [ngStyle]="{backgroundColor:num>5?'blue':'white'}" [ngClass]="{numColor:num>5}" *ngFor="let num of logNumbers">{{num}}</div> -->
+
+<ul [ngStyle]="{backgroundColor:i>4?'blue':'white'}" 
+    [ngClass]="{numColor:i>4}" 
+    *ngFor="let num of logNumbers; let i=index"><li>{{num}}</li></ul>
